@@ -174,9 +174,9 @@ uvicorn main:app --reload
 
 ## Документация для GitHub Pages
 
-В папке [`docs/`](/Users/kirkramar/Documents/Lr1/docs) лежит подробная документация для публикации через GitHub Pages:
+В папке [`docs/`](../docs) лежит подробная документация для публикации через GitHub Pages:
 
-- [Главная страница](/Users/kirkramar/Documents/Lr1/docs/index.md)
-- [Запуск проекта](/Users/kirkramar/Documents/Lr1/docs/run-guide.md)
-- [Описание API](/Users/kirkramar/Documents/Lr1/docs/api.md)
-- [Модель данных](/Users/kirkramar/Documents/Lr1/docs/data-model.md)
+- [Главная страница](../index.md)
+- [Запуск проекта](../run-guide.md)
+- [Описание API](../api.md)
+- [Модель данных](../data-model.md)
