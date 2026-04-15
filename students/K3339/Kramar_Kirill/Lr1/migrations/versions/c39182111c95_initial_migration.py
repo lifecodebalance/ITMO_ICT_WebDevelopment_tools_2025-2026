@@ -36,9 +36,6 @@ task_status_enum = sa.Enum(
 
 
 def upgrade() -> None:
-    task_priority_enum.create(op.get_bind(), checkfirst=True)
-    task_status_enum.create(op.get_bind(), checkfirst=True)
-
     op.create_table(
         "user",
         sa.Column("id", sa.Integer(), primary_key=True, nullable=False),
