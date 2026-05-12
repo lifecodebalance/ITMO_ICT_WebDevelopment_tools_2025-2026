@@ -1,0 +1,13 @@
+site_name: "ЛР2: Потоки, процессы, асинхронность"
+site_description: "Лабораторная работа №2 по Python"
+theme:
+  name: material
+  language: ru
+
+nav:
+  - Главная: index.md
+  - Подготовка и запуск: setup.md
+  - Задача 1 (сумма 1..10^13): task1.md
+  - Задача 2 (парсинг + БД): task2.md
+  - Сравнение и выводы: comparison.md
+  - Частые вопросы: faq.md
