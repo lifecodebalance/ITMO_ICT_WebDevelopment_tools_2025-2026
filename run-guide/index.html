@@ -4,27 +4,27 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Documentation for the project">
         
         
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>ITMO ICT Web Development Tools</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/fontawesome.min.css" rel="stylesheet">
-        <link href="css/brands.min.css" rel="stylesheet">
-        <link href="css/solid.min.css" rel="stylesheet">
-        <link href="css/v4-font-face.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Run guide - ITMO ICT Web Development Tools</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
         <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href=".">ITMO ICT Web Development Tools</a>
+                <a class="navbar-brand" href="..">ITMO ICT Web Development Tools</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,16 +35,16 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
-                                <a href="." class="nav-link active" aria-current="page">Главная</a>
+                                <a href=".." class="nav-link">Главная</a>
                             </li>
                             <li class="nav-item">
-                                <a href="api/" class="nav-link">API</a>
+                                <a href="../api/" class="nav-link">API</a>
                             </li>
                             <li class="nav-item">
-                                <a href="data-model/" class="nav-link">Data model</a>
+                                <a href="../data-model/" class="nav-link">Data model</a>
                             </li>
                             <li class="nav-item">
-                                <a href="run-guide/" class="nav-link">Run guide</a>
+                                <a href="./" class="nav-link active" aria-current="page">Run guide</a>
                             </li>
                         </ul>
 
@@ -55,12 +55,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
+                                <a rel="prev" href="../data-model/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="api/" class="nav-link">
+                                <a rel="next" class="nav-link disabled">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -82,21 +82,33 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#time-manager-api" class="nav-link">Time Manager API</a>
+            <li class="nav-item" data-bs-level="1"><a href="#_1" class="nav-link">Запуск проекта</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#_1" class="nav-link">О проекте</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#-" class="nav-link">Почему это именно тайм-менеджер</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_2" class="nav-link">Требования</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_2" class="nav-link">Состав документации</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_3" class="nav-link">Установка зависимостей</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#_3" class="nav-link">Ключевые особенности реализации</a>
+            <li class="nav-item" data-bs-level="2"><a href="#_4" class="nav-link">Настройка окружения</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_6" class="nav-link">Миграции</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_7" class="nav-link">Запуск приложения</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#alembicini" class="nav-link">Важный нюанс по alembic.ini</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_8" class="nav-link">Что нужно помнить</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -107,46 +119,63 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="time-manager-api">Time Manager API</h1>
-<h2 id="_1">О проекте</h2>
-<p><code>Time Manager API</code> — это backend-проект на FastAPI для лабораторной работы по серверной разработке.</p>
-<p>Основная идея проекта: дать пользователю простой API для управления своим временем через задачи, категории, теги и напоминания.</p>
-<p>Проект поддерживает:</p>
+<h1 id="_1">Запуск проекта</h1>
+<h2 id="_2">Требования</h2>
 <ul>
-<li>регистрацию и вход;</li>
-<li>JWT-аутентификацию;</li>
-<li>работу с задачами;</li>
-<li>учет статуса и приоритета задач;</li>
-<li>разбиение задач по категориям;</li>
-<li>маркировку задач тегами;</li>
-<li>создание напоминаний;</li>
-<li>миграции через Alembic.</li>
+<li>Python 3.10+</li>
+<li>PostgreSQL</li>
+<li>установленный <code>pip</code></li>
 </ul>
-<h2 id="-">Почему это именно тайм-менеджер</h2>
-<p>В центре предметной области находится сущность задачи:</p>
+<h2 id="_3">Установка зависимостей</h2>
+<pre><code class="language-bash">python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+</code></pre>
+<p>Для Windows:</p>
+<pre><code class="language-powershell">python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+</code></pre>
+<h2 id="_4">Настройка окружения</h2>
+<p>Создай файл <code>.env</code> рядом с <code>main.py</code>.</p>
+<p>Пример:</p>
+<pre><code class="language-env">DB_TIME=postgresql+psycopg://postgres:postgres@localhost:5432/time_manager_db
+SECRET_KEY=replace-with-a-long-random-secret-key
+</code></pre>
+<h3 id="_5">Что означают переменные</h3>
 <ul>
-<li>задача имеет дедлайн;</li>
-<li>задача имеет приоритет;</li>
-<li>задача имеет статус выполнения;</li>
-<li>задача хранит планируемое и фактическое время;</li>
-<li>задача может быть включена в категорию;</li>
-<li>задача может иметь набор тегов;</li>
-<li>задача может иметь несколько напоминаний.</li>
+<li><code>DB_TIME</code> — строка подключения к базе данных PostgreSQL;</li>
+<li><code>SECRET_KEY</code> — секрет для подписи JWT-токенов.</li>
 </ul>
-<p>То есть система помогает не просто хранить список дел, а структурировать работу по времени и контексту.</p>
-<h2 id="_2">Состав документации</h2>
+<h2 id="_6">Миграции</h2>
+<p>Перед первым запуском нужно создать таблицы через Alembic:</p>
+<pre><code class="language-bash">alembic upgrade head
+</code></pre>
+<p>Если нужно откатить последнюю миграцию:</p>
+<pre><code class="language-bash">alembic downgrade -1
+</code></pre>
+<h2 id="_7">Запуск приложения</h2>
+<pre><code class="language-bash">uvicorn main:app --reload
+</code></pre>
+<p>Документация Swagger:</p>
 <ul>
-<li><a href="run-guide/">Как запустить проект</a></li>
-<li><a href="api/">Описание API</a></li>
-<li><a href="data-model/">Модель данных</a></li>
+<li><code>http://127.0.0.1:8000/docs</code></li>
 </ul>
-<h2 id="_3">Ключевые особенности реализации</h2>
+<h2 id="alembicini">Важный нюанс по <code>alembic.ini</code></h2>
+<p>В <code>alembic.ini</code> не зашит конкретный URL базы данных.<br />
+Это сделано специально: адрес БД подставляется из <code>.env</code> в файле <code>migrations/env.py</code>.</p>
+<p>Такой подход удобнее и безопаснее:</p>
 <ul>
-<li>конфигурация БД берется из переменных окружения;</li>
-<li>строка подключения для Alembic не хранится в <code>alembic.ini</code>;</li>
-<li>миграции создают схему базы данных;</li>
-<li>чувствительные данные пользователя не возвращаются наружу;</li>
-<li>код написан в учебном стиле и снабжен комментариями в нетривиальных местах.</li>
+<li>в репозиторий не попадают реальные данные подключения;</li>
+<li>проще переключаться между локальной БД и тестовой;</li>
+<li>настройка соответствует хорошей практике для учебных и рабочих проектов.</li>
+</ul>
+<h2 id="_8">Что нужно помнить</h2>
+<ul>
+<li>приложение не создает таблицы автоматически;</li>
+<li>если миграции не выполнены, запросы к API не будут работать корректно;</li>
+<li>проект рассчитан в первую очередь на PostgreSQL;</li>
+<li>для локальных технических проверок можно временно использовать SQLite, но сдавать работу лучше с конфигурацией под PostgreSQL.</li>
 </ul></div>
             </div>
         </div>
@@ -155,13 +184,13 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
         <script>
-            var base_url = ".",
+            var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js"></script>
-        <script src="search/main.js"></script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -226,8 +255,3 @@
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.6.1
-Build Date UTC : 2026-05-12 01:16:28.297695+00:00
--->
