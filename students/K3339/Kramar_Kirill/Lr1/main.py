@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from auth.router import router as auth_router
 from controllers.categories import router as categories_router
+from controllers.parser_proxy import router as parser_proxy_router
 from controllers.reminders import router as reminders_router
 from controllers.tags import router as tags_router
 from controllers.tasks import router as tasks_router
@@ -30,6 +31,7 @@ app.include_router(tasks_router)
 app.include_router(categories_router)
 app.include_router(tags_router)
 app.include_router(reminders_router)
+app.include_router(parser_proxy_router)
 
 
 @app.get("/")

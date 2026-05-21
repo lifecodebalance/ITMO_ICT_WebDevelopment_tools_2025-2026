@@ -1,0 +1,12 @@
+site_name: "ЛР3: Docker, Парсер, Celery"
+site_description: "Лабораторная работа №3 по Python — упаковка в Docker и очереди задач"
+theme:
+  name: material
+  language: ru
+
+nav:
+  - Главная: index.md
+  - Запуск: setup.md
+  - Подзадача 1 — Docker: task1_docker.md
+  - Подзадача 2 — HTTP прокси: task2_proxy.md
+  - Подзадача 3 — Celery: task3_celery.md
